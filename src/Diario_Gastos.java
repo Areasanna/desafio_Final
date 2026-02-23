@@ -110,14 +110,14 @@ public class Diario_Gastos {
 
         boolean encontrou = false;
         for (Gasto g : lista) {
-            if (filtro == 1) { // Filtro Semanal [cite: 14]
+            if (filtro == 1) {
                 int semanaAtual = hoje.get(IsoFields.WEEK_OF_WEEK_BASED_YEAR);
                 int semanaGasto = g.getData().get(IsoFields.WEEK_OF_WEEK_BASED_YEAR);
                 if (semanaGasto == semanaAtual && g.getData().getYear() == hoje.getYear()) {
                     System.out.println(g);
                     encontrou = true;
                 }
-            } else if (filtro == 2) { // Filtro Mensal [cite: 14]
+            } else if (filtro == 2) {
                 System.out.print("Digite o número do mês (1-12): ");
                 int mes = Integer.parseInt(ler.nextLine());
                 if (g.getData().getMonthValue() == mes) {
