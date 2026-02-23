@@ -29,7 +29,7 @@ public class Diario_Gastos {
 
                 switch (opcao) {
                     case 1:
-                        System.out.print("Nome do protudo "); String desc = ler.nextLine();
+                        System.out.print("Nome do produto:  "); String desc = ler.nextLine();
                         System.out.print("Categoria: "); String cat = ler.nextLine();
                         System.out.print("Valor: "); double val = Double.parseDouble(ler.nextLine());
                         System.out.print("Data: "); String dat = ler.nextLine();
