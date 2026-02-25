@@ -11,7 +11,8 @@ public class Diario_Gastos {
     public static void main(String[] args) {
         System.out.println("O arquivo está em: " + new File(arquivo).getAbsolutePath());
         Scanner ler = new Scanner(System.in);
-        ArrayList<Gasto> listaGastos = new ArrayList<>(); // Armazena objetos Gasto
+        ArrayList<Gasto> listaGastos = new ArrayList<>();
+        carregar(listaGastos);
         int opcao = -1;
 
         do {
